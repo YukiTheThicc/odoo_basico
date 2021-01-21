@@ -16,7 +16,11 @@
         <form string="Formulario informacion">
           <sheet>
             <group>
-                <field name="name"/>
+              <field name="name"/>
+              <field name="foto" widget="image" class="oe_avatar"/>
+              <field name="foto" widget="image"/>
+              <field name="adxunto_nome" invisible="1"/>
+              <field name="adxunto" filename="adxunto_nome"/>
             </group>
             <notebook>
               <page string="Datos Personales">
