@@ -1,0 +1,64 @@
+<odoo>
+    <data>
+        <record model="odoo_basico.informacion" id="odoo_basico informacion 1">
+            <field name="name">Rexistro1</field>
+            <field name="description">Descipcion1</field>
+            <field name="autorizado">True</field>
+            <field name="sexo_traducido">Hombre</field>
+            <field name="alto_en_centimetros">1</field>
+            <field name="longo_en_centimetros">1</field>
+            <field name="ancho_en_centimetros">1</field>
+            <field name="peso">1</field>
+        </record>
+        <record model="odoo_basico.informacion" id="odoo_basico informacion 2">
+            <field name="name">Rexistro2</field>
+            <field name="description">Descipcion2</field>
+            <field name="autorizado">True</field>
+            <field name="sexo_traducido">Hombre</field>
+            <field name="alto_en_centimetros">2</field>
+            <field name="longo_en_centimetros">2</field>
+            <field name="ancho_en_centimetros">2</field>
+            <field name="peso">2</field>
+        </record>
+        <record model="odoo_basico.informacion" id="odoo_basico informacion 3">
+            <field name="name">Rexistro3</field>
+            <field name="description">Descipcion3</field>
+            <field name="autorizado">True</field>
+            <field name="sexo_traducido">Hombre</field>
+            <field name="alto_en_centimetros">3</field>
+            <field name="longo_en_centimetros">3</field>
+            <field name="ancho_en_centimetros">3</field>
+            <field name="peso">3</field>
+        </record>
+        <record model="odoo_basico.informacion" id="odoo_basico informacion 4">
+            <field name="name">Rexistro4</field>
+            <field name="description">Descipcion4</field>
+            <field name="autorizado">True</field>
+            <field name="sexo_traducido">Mujer</field>
+            <field name="alto_en_centimetros">4</field>
+            <field name="longo_en_centimetros">4</field>
+            <field name="ancho_en_centimetros">4</field>
+            <field name="peso">4</field>
+        </record>
+        <record model="odoo_basico.informacion" id="odoo_basico informacion 5">
+            <field name="name">Rexistro5</field>
+            <field name="description">Descipcion5</field>
+            <field name="autorizado">False</field>
+            <field name="sexo_traducido">Mujer</field>
+            <field name="alto_en_centimetros">5</field>
+            <field name="longo_en_centimetros">5</field>
+            <field name="ancho_en_centimetros">5</field>
+            <field name="peso">5</field>
+        </record>
+        <record model="odoo_basico.informacion" id="odoo_basico informacion 6">
+            <field name="name">Rexistro6</field>
+            <field name="description">Descipcion6</field>
+            <field name="autorizado">False</field>
+            <field name="sexo_traducido">Mujer</field>
+            <field name="alto_en_centimetros">6</field>
+            <field name="longo_en_centimetros">6</field>
+            <field name="ancho_en_centimetros">6</field>
+            <field name="peso">6</field>
+        </record>
+    </data>
+</odoo>
