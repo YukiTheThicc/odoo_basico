@@ -40,6 +40,16 @@
                   <field name="densidade"/>
                 </group>
               </page>
+              <page string="Moedas">
+                <group>
+                  <field name="moeda_id"/>
+                  <field name="moeda_en_texto"/>
+                  <field name="gasto"/>
+                  <field name="moeda_euro_id" invisible="1"/>
+                  <field name="gasto_en_euros"/>
+                  <field name="creador_da_moeda"/>
+                </group>
+              </page>
             </notebook>
             <!--
             <group>

@@ -21,18 +21,29 @@ class informacion(models.Model):
     foto = fields.Binary(string='Foto')
     adxunto_nome = fields.Char(string="Nome adxunto")
     adxunto = fields.Binary(string='Arquivo adxunto')
+    moeda_id = fields.Many2one('res.currency', domain="[('position','=','after')]")
+    gasto = fields.Monetary("Gasto", 'moeda_id')
+    moeda_en_texto = fields.Char(related="moeda_id.currency_unit_label",
+                                 string="Moeda en formato texto", store=True)
+
+    moeda_euro_id = fields.Many2one('res.currency', default=lambda self: self.env['res.currency']
+                                    .search([('name', '=', "EUR")], limit=1))
+    gasto_en_euros = fields.Monetary("Gasto en Euros", 'moeda_euro_id')
+    creador_da_moeda = fields.Char(related="moeda_id.create_uid.login",
+                                   string="Usuario creador da moeda", store=True)
 
     @api.depends('alto_en_centimetros', 'longo_en_centimetros',
                  'ancho_en_centimetros')
-    def _volume (self):
+    def _volume(self):
         for rexistro in self:
-            rexistro.volume = float(rexistro.alto_en_centimetros) * float(rexistro.ancho_en_centimetros) * float(rexistro.longo_en_centimetros)
+            rexistro.volume = float(rexistro.alto_en_centimetros) * float(rexistro.ancho_en_centimetros) * float(
+                rexistro.longo_en_centimetros)
 
     @api.depends('volume', 'peso')
     def _densidade(self):
         for rexistro in self:
             if rexistro.volume != 0:
-                rexistro.densidade = (float(rexistro.peso) / float(rexistro.volume))*100
+                rexistro.densidade = (float(rexistro.peso) / float(rexistro.volume)) * 100
             else:
                 rexistro.densidade = 0
 #    value = fields.Integer()
