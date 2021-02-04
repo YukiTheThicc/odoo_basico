@@ -54,3 +54,6 @@ class informacion(models.Model):
 #    def _value_pc(self):
 #        for record in self:
 #            record.value2 = float(record.value) / 100
+
+    def _cambia_campo_sexo(self, rexistro):
+        rexistro.sexo_traducido = "Hombre"

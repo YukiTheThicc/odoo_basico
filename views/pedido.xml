@@ -15,7 +15,12 @@
        <field name="model">odoo_basico.pedido</field>
        <field name="arch" type="xml">
          <form string="Formulario pedido">
-           <field name="name"/>
+             <header>
+                 <button name="actualizadorSexo" type="object" string="Actualiza o campo Sexo do modelo información"/>
+             </header>
+                <field name="name"/>
+             <separator string="Visualizar e engadir"/>
+             <field name="lineapedido_ids"/>
          </form>
        </field>
      </record>

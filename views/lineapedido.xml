@@ -16,7 +16,7 @@
        <field name="arch" type="xml">
          <form string="Formulario lineapedido">
            <field name="descripcion_da_lineapedido"/>
-             <field name="pedido_id"/>
+             <field name="informacion_ids"/>
          </form>
        </field>
      </record>
@@ -27,7 +27,6 @@
        <field name="arch" type="xml">
          <tree string="lineapedido Tree">
            <field name="descripcion_da_lineapedido"/>
-             <field name="pedido_id"/>
          </tree>
        </field>
      </record>
