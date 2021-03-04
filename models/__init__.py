@@ -5,3 +5,4 @@ from . import suceso
 from . import pedido
 from . import lineapedido
 from . import persoa
+from . import accion_planificada
